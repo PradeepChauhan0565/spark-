@@ -1,0 +1,385 @@
+  * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+        }
+      :root {
+            --default-color: #666666;
+            --active-color: #01142b;
+        }
+    a{
+        text-decoration: none;
+    }
+    ul li{
+        list-style: none;
+    }
+
+    .all-button {
+  --b: 3px;   /* border thickness */
+  --s: .45em; /* size of the corner */
+  --color:  var(--default-color);
+  
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 15px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.all-button:hover,
+.all-button:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+.all-button:active {
+  background: var(--color);
+  color: #fff;
+}
+
+
+.header a {
+  float: left;
+  color:var(--default-color);
+  text-align: center;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+
+.header a:hover {
+  background-color: #ddd;
+  color:var(--default-color);
+}
+
+.header a.active {
+  border-bottom:1px solid var(--active-color);
+}
+
+.header-right {
+  float: right;
+}
+
+.mobile-header a{
+    color: var(--default-color);
+    display: block;
+}
+.mobile-header a:hover{
+  background-color: #ddd;
+}
+.mobile-header a.active{
+    color: var(--active-color);
+}
+
+    .hover-image{
+        display: none;
+    }
+    .image-wrapper:hover .hover-image{
+        transition: 0.9s;
+        display: block;
+    }
+
+      .bar_container {
+        display: inline-block;
+        cursor: pointer;
+      }
+
+     .bar2 {
+        width: 16px;
+        height: 2px;
+        background-color:var(--default-color);
+        transition: 0.4s;
+        border-radius: 5px;
+        margin-top: 7px;
+        margin-bottom: 7px;
+        margin-left: 7px;
+    }
+
+     .bar1{
+        width: 24px;
+        height: 2px;
+        background-color:var(--default-color);
+        margin-bottom: 7px;
+        transition: 0.4s;
+        border-radius: 5px;
+        
+   }    
+     .bar3 {
+        width: 24px;
+        height: 2px;
+        background-color:var(--default-color);
+        transition: 0.4s;
+        border-radius: 5px;
+   }
+
+ /* --------------index page header---------- */
+ .category-wrapper:hover{
+    box-shadow: -2px 2px 70px -25px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+ }
+ .hover-image{
+     display: none;
+    }
+    .image-wrapper:hover .hover-image{
+        transition: 0.9s;
+        display: block;
+    }
+
+    .category-title{
+        color: var(--default-color);
+    }
+    .category-title:hover {
+        color: var(--active-color);
+    }
+    /* --------------contact page header---------- */
+
+      .none {
+            display: none
+        }
+
+        .datainput {
+            position: relative;
+            margin: 5px 0 20px
+        }
+
+        .datainput p {
+            font-size: 12px;
+            background: #eee;
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: .5rem
+        }
+
+        .whatsapp-form textarea {
+            min-height: 120px
+        }
+
+        .datainput select {
+            padding: 12px 0;
+            color: var(--default-color);
+            font-size: 14px;
+            width: 100%;
+            border: 0;
+            border-bottom: 1px solid #ddd;
+            outline: none;
+            background: #fff
+        }
+
+        .datainput input,
+        .datainput textarea {
+            font-size: 15px;
+            padding: 15px 0;
+            display: block;
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #ddd
+        }
+
+        .datainput input:focus,
+        .datainput textarea:focus {
+            outline: none
+        }
+
+        .datainput label {
+            color: var(--default-color);
+            font-size: 14px;
+            font-weight: 400;
+            position: absolute;
+            pointer-events: none;
+            left: 0;
+            top: 18px;
+            transition: .2s ease all
+        }
+
+        .datainput input:focus~label,
+        .datainput input:valid~label,
+        .datainput textarea:focus~label,
+        .datainput textarea:valid~label {
+            top: -10px;
+            font-size: 14px;
+            color: var(--default-color);
+        }
+
+        #notif-license span {
+            font-size: 40px
+        }
+
+        #notif-license {
+            display: none;
+            position: fixed
+        }
+
+        .bar {
+            position: relative;
+            display: block;
+            width: 100%
+        }
+
+        .bar:before,
+        .bar:after {
+            content: '';
+            height: 2px;
+            width: 0;
+            bottom: 1px;
+            position: absolute;
+            background: var(--default-color);
+            transition: .2s ease all
+        }
+
+        .bar:before {
+            left: 50%
+        }
+
+        .bar:after {
+            right: 50%
+        }
+
+        .datainput input:focus~.bar:before,
+        .datainput input:focus~.bar:after,
+        .datainput textarea:focus~.bar:before,
+        .datainput textarea:focus~.bar:after {
+            width: 50%
+        }
+
+
+        .highlight {
+            position: absolute;
+            height: 50%;
+            width: 100px;
+            top: 25%;
+            left: 0;
+            pointer-events: none;
+            opacity: .5
+        }
+
+        .datainput input:focus~.highlight,
+        .datainput textarea:focus~.highlight {
+            animation: inputHighlighter .3s ease
+        }
+
+        .datainput input:focus~label,
+        .datainput input:valid~label,
+        .datainput textarea:focus~label,
+        .datainput textarea:valid~label {
+            top: -10px;
+            font-size: 13px;
+            color: var(--default-color);
+        }
+
+        form.whatsapp-form {
+            box-shadow: 0 1px 6px rgba(32, 33, 36, .28);
+            border-radius: .5rem;
+            padding: 20px;
+            box-sizing: border-box;
+            color: #444;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .whatsapp-form a.send_form {
+            color: #fff;
+            background: var(--default-color);
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px 25px;
+            border-radius: .3rem;
+            font-weight: 700;
+            letter-spacing: .5px;
+            font-size: 15px;
+        }
+
+        #text-info span {
+            display: block;
+            padding: 10px 15px;
+            text-align: center;
+            font-weight: 700;
+            margin: 15px 0;
+            border-radius: .5rem;
+        }
+
+        /* ---------------------About css-------------- */
+        .vision-wrapper{
+            box-shadow: -2px 2px 70px -25px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+        }
+
+         .vision-wrapper h4{
+              color:  var(--default-color);
+         }
+         .vision-wrapper img{
+             box-shadow: -2px 2px 70px -25px rgba(0, 0, 0, 0.3);
+             padding: 20px;
+             width: 120px;
+             border-radius: 50%;
+         }
+         .vision-wrapper p{
+              color:  var(--default-color);
+         }
+
+        /* ---------------------footer css-------------- */
+
+         .footer {
+        padding-left: 0rem;
+    }
+
+    .footer li a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .footer li a:hover {
+        color: var(--active-color);
+    }
+
+    .footer_head {
+        position: relative;
+        font-size: 19px;
+    }
+
+    .footer_head::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        height: 2px;
+        background: var(--active-color);
+        width: 60px;
+    }
+
+    .team_social {
+        font-size: 14px;
+        background-color: #fff;
+        opacity: 0.8;
+        color:  var(--default-color);
+        width: 36px;
+        text-align: center;
+        height: 36px;
+        line-height: 36px;
+        border-radius: 50%;
+        border: 1px solid gray;
+        transition: all 0.5s;
+        margin-bottom: 10px;
+    }
+
+    .team_social:hover {
+        opacity: 1;
+    }

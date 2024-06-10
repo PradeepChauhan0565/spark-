@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- - ---------------font family------------ -- -->
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- - ---------------jquery------------ -- -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="all-style.css">
+</head>
+<body>
+<!-- --------------desktop header---------- -->
+    <div class="shadow bg-white" style="position: sticky; top: 0; z-index: 999;">
+        <div class="container">
+                <div class="row align-items-center">
+                        <div class="col-lg-2 col-6">
+                            <a href="index.html">
+                                <img src="image/logo.png" alt="logo" class="d-lg-block d-none" style="width: 90px;">
+                                <img src="image/logo.png" alt="logo" class="d-lg-none d-block" style="width: 50px;">
+                            </a>
+                        </div>
+                        <div class="col-9 d-lg-block d-none ">
+                                <div class="header d-flex justify-content-end align-items-center">
+                                    <div class="header-right">
+                                        <a href="index.html">Home</a>
+                                        <a href="about-us.html">About Us</a>
+                                        <a href="collection.html">Collection</a>
+                                        <a class="active" href="contact-us.html">Contact Us</a>
+                                    </div>                
+                            </div>
+                        </div>
+                        <div class="col-lg-1 col-6 d-flex justify-content-end">
+                            <div class="bar_container d-lg-none d-block" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                                <div class="bar1"></div>
+                                <div class="bar2"></div>
+                                <div class="bar3"></div>
+                            </div>
+                        </div>
+                </div>
+        </div>
+    </div>
+
+        <!-- --------------mobile header---------- -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Spark Jewelry</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="mobile-header p-0">
+                    <li  class="mb-2"><a class="p-2 " href="index.html">Home</a></li>
+                    <li class="mb-2"><a class="p-2" href="about-us.html">About Us</a></li>
+                    <li class="mb-2"><a class="p-2" href="collection.html">Collection</a></li>
+                    <li class="mb-2"><a class="p-2 active" href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+  <!-- --------------mobile header end---------- -->
+
+ 
+ <br>
+ 
+    <div class="container">
+    
+                <div class="text-center">
+                    <h2 style="color: var(--default-color);">Contact Us</h2>
+                </div>
+                <br>
+            
+                <div class="row g-4">
+                    <div class="col-lg-7">
+                        <form class="whatsapp-form">
+                            <div class="datainput">
+                                <input class="validate" id="wa_name" name="name" required="" type="text"
+                                    value='' />
+                                <span class="highlight"></span><span class="bar"></span>
+                                <label>Your Name</label>
+                            </div>
+                            <div class="datainput">
+                                <input class="validate" id="wa_email" name="email" required="" type="email"
+                                    value='' />
+                                <span class="highlight"></span><span class="bar"></span>
+                                <label>Email Address</label>
+                            </div>
+                            <div class="datainput">
+                                <input class="validate" id="wa_number" name="number" required="" type="email"
+                                    value='' />
+                                <span class="highlight"></span><span class="bar"></span>
+                                <label>Contact Number</label>
+                            </div>
+                            <!-- <div class="datainput">
+                                <select id="wa_select">
+                                    <option hidden='hidden' selected='selected' value='default'>Select Option</option>
+                                    <option value="1">Jewelry Ecommerce Website</option>
+                                    <option value="2">Jewelry Business Website</option>
+                                    <option value="3">Jewelry B2B Website</option>
+                                </select>
+                            </div> -->
+                            <div class="datainput">
+                                <textarea id='wa_textarea' placeholder='' maxlength='5000' row='1' required=""></textarea>
+                                <span class="highlight"></span><span class="bar"></span>
+                                <label>Description</label>
+                            </div>
+                            <a class="send_form" href="javascript:void" type="submit" title="Send to Whatsapp">Submit</a>
+                            <br>
+                            <br>
+
+                        </form>
+                    </div>
+                    <div class="col-lg-5">
+                        <form class="whatsapp-form">
+                            <h4>Contact Details : -</h4>
+                            <div class="row g-3 mt-4">
+                                <div class="col-3 d-flex justify-content-center">
+                                    <div
+                                        class=" shadow rounded d-flex align-items-center justify-content-center"style="font-size: 26px; width:50px; height:50px;">
+                                        <i class="fas fa-map-marker-alt "></i>
+                                    </div>
+                                </div>
+                                <div class="col-9">
+                                    <h5>Our Address</h5>
+                                    <p>
+                                       202, Tower I, Seepz  ++
+                                        Andheri (E), Mumbai - 400 096.
+                                        Maharashtra, India.
+
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-3 d-flex justify-content-center">
+                                    <div
+                                        class=" shadow rounded d-flex align-items-center justify-content-center"style="font-size: 26px; width:50px; height:50px;">
+                                        <i class="fas fa-headphones-alt "></i>
+                                    </div>
+                                </div>
+                                <div class="col-9">
+                                    <h5>Phone Number</h5>
+                                    <p>
+                                        <a href="tel:+91-22-49799620">+91-22-49799620</a> |
+                                        <a href="tel:+91-22-46099704">+91-22-46099704</a>
+
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row g-3 mb-4">
+                                <div class="col-3 d-flex justify-content-center">
+                                    <div
+                                        class=" shadow rounded d-flex align-items-center justify-content-center"style="font-size: 26px; width:50px; height:50px;">
+                                        <i class="far fa-envelope"></i>
+                                    </div>
+                                </div>
+                                <div class="col-9">
+                                    <h5>Email Address</h5>
+                                    <p>
+                                        <a href="tel:admin@sparkjewelry.co.in">admin@sparkjewelry.co.in</a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <h4>Follow Us</h4>
+                            <div class="mt-3 d-flex">
+                              
+                                    <a style="color:var(--default-color);" href="#"
+                                        title="" target="_blank">
+                                        <div class="  p-2 border mx-1 "><i class="fa-brands fa-instagram"></i></div>
+                                    </a>
+                              
+                            </div>
+
+
+                        </form>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+                <form class="whatsapp-form">
+                  <iframe class="w-100"  src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d120627.77617589636!2d72.79094548151669!3d19.12440685847707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3be7c82223eefa85%3A0x2d10ef367355f1f4!2sBusiness%20Facilitation%20Center%2C%203rd%20Floor%2C%20Office%20No.2%2C%20Behind%20SEEPZ%20Service%20Center%2C%20SEEPZ%20SEZ%2C%20Andheri%2C%20Mumbai%2C%20Maharashtra%20400096!3m2!1d19.124425199999997!2d72.8733472!5e0!3m2!1sen!2sin!4v1715247057789!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </form>
+                <br>
+                <br>
+                <br>
+           
+    </div>
+
+       <!-- --------------Footer page end---------- -->
+
+<div style="background-color: var(--default-color);">
+    <div class="container">
+        <div class="row  g-4 ">
+            <div class="col-lg-3 col-md-6">
+
+                <div class="text-center">
+                    <a href="index.html"><img src="image/logo.png"
+                            alt="" style="width:110px;"></a>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="mb-4 text-white footer_head">QUICK LINKS</h4>
+                <ul class="footer">
+                    <li class="mb-2"><a href="index.html">Home</a></li>
+                    <li class="mb-2"><a href="about-us.html">About Us</a></li>
+                    <li class="mb-2"><a href="collection.html">Collection</a></li>         
+                    <li class="mb-2"><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="mb-4 text-white footer_head">HELP</h4>
+                <ul class="footer">                
+                    <li class="mb-2">
+                        <a href="">
+                            202, Tower I, Seepz ++ Andheri (E), Mumbai - 400 096. Maharashtra, India.
+                        </a>
+                    </li>
+                    
+                    <li class="mb-2">
+                        <a href="tel:+91-22-49799620">+91-22-49799620</a> 
+                    </li>
+                    <li class="mb-2">
+                        <a href="tel:+91-22-46099704">+91-22-46099704 </a>
+                    </li>
+                    <li class="mb-2"><a href="mailto:admin@sparkjewelry.co.in">admin@sparkjewelry.co.in</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="mb-4 text-white footer_head">GET CONNECTED</h4>
+              
+                <div class="mb-2"style="color:#ffff;">Follow us online for specials and more!</div>
+                <div class="d-flex  align-items-center">
+                    <a href=""> <i class=" fab fa-facebook-square team_social mx-1"></i></a>
+                    <a href=""> <i class=" fab fa-instagram-square team_social mx-1"></i></a>
+                    <a href=""> <i class=" fab fa-pinterest-square team_social mx-1"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script type="text/javascript">
+        //<![CDATA[
+        $(document).on('click', '.send_form', function() {
+            var input_blanter = document.getElementById('wa_email');
+            /* Whatsapp Settings */
+            var walink = 'https://web.whatsapp.com/send',
+                phone = '8451863190',
+                walink2 = 'Halo Sosialy.com',
+                text_yes = 'Terkirim.',
+                text_no = 'Isi semua Formulir lalu klik Send.';
+            /* Smartphone Support */
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                var walink = 'whatsapp://send';
+            }
+            if ("" != input_blanter.value) {
+                /* Call Input Form */
+                var input_select1 = $("#wa_select :selected").text(),
+                    input_name1 = $("#wa_name").val(),
+                    input_email1 = $("#wa_email").val(),
+                    input_number1 = $("#wa_number").val(),
+                    input_url1 = $("#wa_url").val(),
+                    input_textarea1 = $("#wa_textarea").val();
+                /* Final Whatsapp URL */
+                var blanter_whatsapp = walink + '?phone=' + phone + '&text=' + walink2 + '%0A%0A' +
+                    '*Name* : ' + input_name1 + '%0A' +
+                    '*Email Address* : ' + input_email1 + '%0A' +
+                    '*Select Option* : ' + input_select1 + '%0A' +
+                    '*Input Number* : ' + input_number1 + '%0A' +
+                    '*URL/Link* : ' + input_url1 + '%0A' +
+                    '*Description* : ' + input_textarea1 + '%0A';
+                /* Whatsapp Window Open */
+                window.open(blanter_whatsapp, '_blank');
+                document.getElementById("text-info").innerHTML = '<span class="yes">' + text_yes + '</span>';
+            } else {
+                document.getElementById("text-info").innerHTML = '<span class="no">' + text_no + '</span>';
+            }
+        });
+        //]]>
+    </script>
+ 
+   
+      <!-- --------------contact page end---------- -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
+
